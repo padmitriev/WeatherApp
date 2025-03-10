@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: interop
+  main:
+    banner-mode: "off"
+  output:
+    ansi:
+      enabled: ALWAYS
+  sql:
+    init:
+      mode: always
+  # Настройки H2
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+#  http://localhost:8082/h2-console
+  datasource:
+    url: jdbc:h2:file:./data/interopdb;AUTO_SERVER=TRUE
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update  # Или 'validate', если вы используете Liquibase
+    show-sql: true  # Для отображения SQL-запросов в логах
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+#  datasource:
+##    url: jdbc:h2:file:C:/Users/Администратор/test
+##    url: jdbc:h2:file:~/testdb;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+##    url: jdbc:h2:file:C:/data/demodb
+##    url: jdbc:h2:mem:TEST;DB_CLOSE_DELAY=-1
+#    url: jdbc:h2:file:./data/app_db;DB_CLOSE_ON_EXIT=FALSE
+##    dbname: users
+##    script: classpath:resources/users.sql
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password:
+
+  # Настройки JPA
+
+#  jpa:
+#    defer-datasource-initialization: true
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+#  liquibase:
+#    change-log: classpath:db/changelog/db.changelog-master.yaml
+#    enabled: true
+#    default-schema: public
+
+server:
+  port: 8082
+
+logging:
+  level:
+    root: INFO
+  pattern:
+    console: "\u001b[0;34;1m%d{HH:mm:ss} \u001b[0;32;1m%-5level \u001b[0;33;1m%logger{36} - \u001b[0;37;1m%msg%n"
+
+
+
+
+

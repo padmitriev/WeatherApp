@@ -1,0 +1,8 @@
+2025-03-10 00:17:09.803516+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Значение слишком длинное для поля "WEATHER_DATA CHARACTER VARYING(255)": "U&'{""coord"":{""lon"":13.3889,""lat"":52.517},""weather"":[{""id"":800,""main"":""Clear"",""de... (508)"
+Value too long for column "WEATHER_DATA CHARACTER VARYING(255)": "U&'{""coord"":{""lon"":13.3889,""lat"":52.517},""weather"":[{""id"":800,""main"":""Clear"",""de... (508)"; SQL statement:
+insert into weather_request (latitude,longitude,request_time,weather_data,weather_description,id) values (?,?,?,?,?,default) [22001-232]
+2025-03-10 00:22:37.309961+03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Значение слишком длинное для поля "WEATHER_DATA CHARACTER VARYING(255)": "U&'{""coord"":{""lon"":13.3889,""lat"":52.517},""weather"":[{""id"":800,""main"":""Clear"",""de... (508)"
+Value too long for column "WEATHER_DATA CHARACTER VARYING(255)": "U&'{""coord"":{""lon"":13.3889,""lat"":52.517},""weather"":[{""id"":800,""main"":""Clear"",""de... (508)"; SQL statement:
+insert into weather_request (latitude,longitude,request_time,weather_data,weather_description,id) values (?,?,?,?,?,default) [22001-232]
