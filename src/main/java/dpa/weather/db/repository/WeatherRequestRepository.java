@@ -1,6 +1,6 @@
-package dpa.weather.vaa2.db.repository;
+package dpa.weather.db.repository;
 
-import dpa.weather.vaa2.db.entity.WeatherRequest;
+import dpa.weather.db.entity.WeatherRequest;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

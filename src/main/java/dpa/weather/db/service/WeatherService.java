@@ -1,6 +1,6 @@
-package dpa.weather.vaa2.db.service;
+package dpa.weather.db.service;
 
-import dpa.weather.vaa2.db.entity.WeatherRequest;
+import dpa.weather.db.entity.WeatherRequest;
 
 import java.util.List;
 

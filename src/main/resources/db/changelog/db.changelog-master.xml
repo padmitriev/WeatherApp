@@ -5,9 +5,9 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <!-- Создание таблицы "weather_request" -->
+    <!-- Создание таблицы "requests" -->
     <changeSet id="1" author="your-name">
-        <createTable tableName="weather_request">
+        <createTable tableName="requests">
             <column name="id" type="bigint" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>

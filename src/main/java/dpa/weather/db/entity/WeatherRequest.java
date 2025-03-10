@@ -1,4 +1,4 @@
-package dpa.weather.vaa2.db.entity;
+package dpa.weather.db.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
